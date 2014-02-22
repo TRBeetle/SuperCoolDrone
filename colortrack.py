@@ -9,9 +9,9 @@ import cv2
 import numpy as np
 
 def getthresholdedimg(hsv):
-    yellow = cv2.inRange(hsv,np.array((20,100,100)),np.array((30,255,255)))
+    #yellow = cv2.inRange(hsv,np.array((20,100,100)),np.array((30,255,255)))
     blue = cv2.inRange(hsv,np.array((100,100,100)),np.array((120,255,255)))
-    both = cv2.add(yellow,blue)
+    #both = cv2.add(yellow,blue)
     return blue
 
 c = cv2.VideoCapture(0)

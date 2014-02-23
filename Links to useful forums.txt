@@ -1,0 +1,8 @@
+OPen cv Python Blogspot
+http://opencvpython.blogspot.it/2012/06/contours-2-brotherhood.html
+
+OpenCV documentation
+https://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html#install-opencv-python-in-windows
+
+Perhaps the most useful forum:
+https://groups.google.com/forum/#!topic/drones-discuss/KbgEQw-Bjbc

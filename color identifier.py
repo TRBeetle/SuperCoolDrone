@@ -10,7 +10,7 @@ import numpy as np
 
 def getthresholdedimg(hsv):
     #yellow = cv2.inRange(hsv,np.array((20,100,100)),np.array((30,255,255)))
-    blue = cv2.inRange(hsv,np.array((100,100,100)),np.array((120,255,255)))
+    blue = cv2.inRange(hsv,np.array((100,100,100)),np.array((255,255,255)))
     #both = cv2.add(yellow,blue)
     return blue
 
@@ -28,7 +28,8 @@ while(1):
     dilate = cv2.dilate(erode,None,iterations = 10)
 
     contours,hierarchy = cv2.findContours(dilate,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
-
+	print f[360][240]
+	cv2.circle(f,lcenter,3,(0,255,0),2)
     for cnt in contours:
 		(x,y),radius = cv2.minEnclosingCircle(cnt)
         #cx,cy = x+w/2, y+h/2

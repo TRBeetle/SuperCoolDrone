@@ -32,10 +32,12 @@ while(1):
     for cnt in contours:
 		(x,y),radius = cv2.minEnclosingCircle(cnt)
         #cx,cy = x+w/2, y+h/2
+		lcenter = (int(240),int(360))
 		center = (int(x),int(y))
+		print f[360][240]
 		radius = int(radius)
-		cv2.circle(f,center,radius,(0,255,0),2)
-		print "blue(x, y, radius) :", y,x, radius
+		cv2.circle(f,lcenter,3,(0,255,0),2)
+		#print "blue(x, y, radius) :", y,x, radius
     #    if 20 < hsv.item(cy,cx,0) < 30:
     #        cv2.rectangle(f,(x,y),(x+w,y+h),[0,255,255],2)
     #        print "yellow :", y,x,w,h

@@ -15,7 +15,7 @@ def getthresholdedimg(hsv):
 
     blue = cv2.inRange(hsv,np.array((100,100,100)),np.array((120,255,255)))
     #both = cv2.add(yellow,blue)
-    return red
+    return blue
 
 c = cv2.VideoCapture(0)
 width,height = c.get(3),c.get(4)
@@ -38,7 +38,7 @@ while(1):
 		center = (int(x),int(y))
 		radius = int(radius)
 		cv2.circle(f,center,radius,(0,255,0),2)
-		print "blue(x, y, radius) :", y,x, radius
+		print "blue(x, y, radius) :", y,(640-x), radius
     #    if 20 < hsv.item(cy,cx,0) < 30:
     #        cv2.rectangle(f,(x,y),(x+w,y+h),[0,255,255],2)
     #        print "yellow :", y,x,w,h

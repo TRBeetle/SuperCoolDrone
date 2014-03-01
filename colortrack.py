@@ -9,13 +9,13 @@ import cv2
 import numpy as np
 def getthresholdedimg(hsv):
     #2/22/14 Musti
-    orange = cv2.inRange(hsv,np.array((140,140,100)),np.array((220,180,220)))
-    red = cv2.inRange(hsv,np.array((0,0,255)),np.array((255,102,102)))
+    orange = cv2.inRange(hsv,np.array((5,50,50)),np.array((15,255,255)))
+    #red = cv2.inRange(hsv,np.array((0,0,255)),np.array((255,102,102)))
     #yellow = cv2.inRange(hsv,np.array((20,100,100)),np.array((30,255,255)))
 
-    blue = cv2.inRange(hsv,np.array((100,100,100)),np.array((120,255,255)))
+    #blue = cv2.inRange(hsv,np.array((100,100,100)),np.array((120,255,255)))
     #both = cv2.add(yellow,blue)
-    return blue
+    return orange
 
 c = cv2.VideoCapture(0)
 width,height = c.get(3),c.get(4)

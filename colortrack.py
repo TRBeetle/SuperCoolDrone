@@ -1,15 +1,10 @@
-## Color Tracking v1.0
-## Copyright (c) 2013-2014 Abid K and Jay Edry
-## You may use, redistribute and/or modify this program it under the terms of the MIT license (https://github.com/abidrahmank/MyRoughWork/blob/master/license.txt).
-
-
 ''' v 0.1 - It tracks two objects of blue and yellow color each '''
 
 import cv2
 import numpy as np
 def getthresholdedimg(hsv):
     #2/22/14 Musti
-    orange = cv2.inRange(hsv,np.array((5,50,50)),np.array((15,255,255)))
+    orange = cv2.inRange(hsv,np.array((10,50,50)),np.array((15,255,255)))
     #red = cv2.inRange(hsv,np.array((0,0,255)),np.array((255,102,102)))
     #yellow = cv2.inRange(hsv,np.array((20,100,100)),np.array((30,255,255)))
 
@@ -33,20 +28,13 @@ while(1):
     contours,hierarchy = cv2.findContours(dilate,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
 
     for cnt in contours:
-		(x,y),radius = cv2.minEnclosingCircle(cnt)
-        #cx,cy = x+w/2, y+h/2
-		center = (int(x),int(y))
-		radius = int(radius)
-		cv2.circle(f,center,radius,(0,255,0),2)
-		print "blue(x, y, radius) :", y,(640-x), radius
-    #    if 20 < hsv.item(cy,cx,0) < 30:
-    #        cv2.rectangle(f,(x,y),(x+w,y+h),[0,255,255],2)
-    #        print "yellow :", y,x,w,h
-    #    elif 100 < hsv.item(cy,cx,0) < 120:
-    #        cv2.rectangle(f,(x,y),(x+w,y+h),[255,0,0],2)
-            #print "blue :", x,y,w,h
-
-    cv2.imshow('img',f)
+        (x,y),radius = cv2.minEnclosingCircle(cnt)
+        center = (int(x),int(y))
+        radius = int(radius)
+        if(radius > 300):
+            circle = cv2.circle(f,center,radius,(0,255,0),2)
+            print "orange(x, y, radius) :", y,(640-x), radius
+    cv2.imshow('img',f) #opens camera
 
     if cv2.waitKey(25) == 27:
         break

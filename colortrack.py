@@ -31,7 +31,7 @@ while(1):
         (x,y),radius = cv2.minEnclosingCircle(cnt)
         center = (int(x),int(y))
         radius = int(radius)
-        if(radius > 300):
+        if(radius > 350):
             circle = cv2.circle(f,center,radius,(0,255,0),2)
             print "orange(x, y, radius) :", y,(640-x), radius
     cv2.imshow('img',f) #opens camera

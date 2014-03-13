@@ -349,7 +349,7 @@ static AP_RangeFinder_MaxsonarXL *sonar;
  *                       3	Throttle
  *                       4	Rudder (if we have ailerons)
  *                       5	Mode - 3 position switch
- *                       6  User assignable
+ *                       6     User assignable
  *                       7	trainer switch - sets throttle nominal (toggle switch), sets accels to Level (hold > 1 second)
  *                       8	TBD
  *               Each Aux channel can be configured to have any of the available auxiliary functions assigned to it.

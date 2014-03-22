@@ -348,7 +348,7 @@ static AP_RangeFinder_MaxsonarXL *sonar;
  *                       2	Elevator
  *                       3	Throttle
  *                       4	Rudder (if we have ailerons)
- *                       5	Mode - 3 position switch
+ *                       5	Mode - 3 position switchdasdsadasdsadadasdasd
  *                       6  User assignable
  *                       7	trainer switch - sets throttle nominal (toggle switch), sets accels to Level (hold > 1 second)
  *                       8	TBD

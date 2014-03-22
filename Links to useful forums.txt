@@ -8,3 +8,6 @@ Perhaps the most useful forum:
 https://groups.google.com/forum/#!topic/drones-discuss/KbgEQw-Bjbc
 
 http://ardupilot.com/downloads/
+
+VERY USEFUL:
+http://diydrones.com/forum/topics/raspberry-pi-mavlink-communication-via-usb-port-apm-2-5

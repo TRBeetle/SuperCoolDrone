@@ -348,8 +348,13 @@ static AP_RangeFinder_MaxsonarXL *sonar;
  *                       2	Elevator
  *                       3	Throttle
  *                       4	Rudder (if we have ailerons)
+<<<<<<< HEAD:ArduCopter/ArduCopter.ino
  *                       5	Mode - 3 position switchdasdsadasdsadadasdasd
  *                       6  User assignable
+=======
+ *                       5	Mode - 3 position switch
+ *                       6     User assignable
+>>>>>>> FETCH_HEAD:ArduCopter/ArduCopter.ino
  *                       7	trainer switch - sets throttle nominal (toggle switch), sets accels to Level (hold > 1 second)
  *                       8	TBD
  *               Each Aux channel can be configured to have any of the available auxiliary functions assigned to it.

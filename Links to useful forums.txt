@@ -11,3 +11,4 @@ http://ardupilot.com/downloads/
 
 VERY USEFUL:
 http://diydrones.com/forum/topics/raspberry-pi-mavlink-communication-via-usb-port-apm-2-5
+http://diydrones.ning.com/forum/topics/mavlink-communications

@@ -35,7 +35,7 @@ while(1):
             circle = cv2.circle(f,center,radius,(0,255,0),2)
             print "orange(x, y, radius) :", y,(640-x), radius
     cv2.imshow('img',f) #opens camera
-
+	# since we know the location of the object we know it wont change locations. we can set a region of interest. 
     if cv2.waitKey(25) == 27:
         break
 
